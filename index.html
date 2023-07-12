@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Correct Number Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <div class="header">
+            <button class="playagain" onclick="reset()">Play Again</button>
+            <p class="guide"> (Between 1 and 100) </p><br><br>
+            <h1>Guess My Number!</h1>
+            <hr/>
+            <div class="number" id="correctno"> ? </div>
+        </div>
+        <div class="main">
+            <div class="first">
+                <input type="number" class="guess" id="guess1"><br>
+                <button class="check" onclick="check()">Check</button>
+            </div>
+            <div class="second">
+                <h2 id="message">Start Guessing....</h2>
+                <div class="result">
+                    <h3>💯 Chances: <span id="chances"> 100</span></h3>
+                    <h3>🥇 Highscore: <span class="highscore"> 0</span></h3>
+                </div>    
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
