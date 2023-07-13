@@ -9,6 +9,17 @@ function random(n){
    return Math.floor(Math.random()*n) + 1;
 }
 
+function reset() {
+    document.body.style.backgroundColor = "aqua";
+    document.getElementById("message").textContent = "Start Guessing.....";
+    //document.querySelector("#chances").textContent = --initialvalue;
+    document.querySelector("#chances").textContent = "100";
+    document.getElementById("guess1").value = "";
+    document.querySelector("#correctno").textContent = "?";
+    randomNumber = random(100); /// every time remove var key//
+    console.log(randomNumber);
+  }
+
 function check(){
     let inputNumber = document.getElementById("guess1").value;
 
@@ -46,11 +57,3 @@ function check(){
 //     document.querySelector(".highscore").textContent = highscore;
 // }
 
-function reset() {
-    document.body.style.backgroundColor = "aqua";
-    document.getElementById("message").textContent = "Start Guessing.....";
-  
-    initialvalue = 100;
-    document.querySelector("#chances").textContent = "100";
-    location.reload();
-  }
