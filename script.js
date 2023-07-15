@@ -13,6 +13,7 @@ function reset() {
     document.body.style.backgroundColor = "aqua";
     document.getElementById("message").textContent = "Start Guessing.....";
     //document.querySelector("#chances").textContent = --initialvalue;
+	initialvalue = 100;
     document.querySelector("#chances").textContent = "100";
     document.getElementById("guess1").value = "";
     document.querySelector("#correctno").textContent = "?";
